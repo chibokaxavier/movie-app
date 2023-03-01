@@ -37,7 +37,7 @@ export default function Index ({ netflixOriginals,
 <Header/>
     <main className='relative pl-4 pb-24 lg:space-y-24 lg:pl-16'>
        <Banner netflixOriginals={netflixOriginals} />
-        <section>
+        <section className='md:space-y-24'>
         <Rows title="Trending Now" movies={trendingNow} />
           <Rows title="Top Rated" movies={topRated} />
           <Rows title="Action Thrillers" movies={actionMovies} />

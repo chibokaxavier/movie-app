@@ -4,7 +4,8 @@ import { Movie } from 'typings'
 import Image from 'next/legacy/image'
 
 interface Props {
-    movie: Movie
+    // movie: Movie| DocumentData
+    movie: Movie 
 }
 
 const Thumbnail = ({movie}:Props) => {
