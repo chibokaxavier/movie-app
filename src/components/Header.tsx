@@ -21,7 +21,7 @@ window.addEventListener("scroll",handleScroll)
     <header className={`${isScrolled && 'bg-[#141414]'}`}>
       <div className="flex items-center space-x-2 md:space-x-10">
         <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCJE_68H_htQuNeOPdMLNlkoCzVgsBcJr_dw&usqp=CAU"
+          src="https://media.istockphoto.com/id/1265725883/vector/spotlight-icon-symbol-design-template.jpg?s=612x612&w=0&k=20&c=7xELFYe9iJ3H5ubC_Dlnk-1rcUZ95NTRYDYUEOTTqOE="
           alt=""
           width={100}
           height={100}
