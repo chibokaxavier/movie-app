@@ -1,10 +1,14 @@
-import React from 'react'
-import "@/app/globals.css"
-import { AppProps } from 'next/app'
+import React from "react";
+import "@/app/globals.css";
+import { AppProps } from "next/app";
+import { AuthProvider } from "hooks/useAuth";
 
+const MyApp = ({ Component, pageProps: { ...pageProps } }: AppProps) => {
+  return (
+    <AuthProvider>
+      <Component {...pageProps} />
+    </AuthProvider>
+  );
+};
 
-const MyApp = ({Component,pageProps:{  ...pageProps },}: AppProps) => {
-  return <Component {...pageProps} />
-}
-
-export default MyApp 
+export default MyApp;
