@@ -39,8 +39,8 @@ const Login = () => {
       <img
         src="https://media.istockphoto.com/id/1265725883/vector/spotlight-icon-symbol-design-template.jpg?s=612x612&w=0&k=20&c=7xELFYe9iJ3H5ubC_Dlnk-1rcUZ95NTRYDYUEOTTqOE="
         className="absolute left-4 top-4 cursor-pointer object-contain md:left-10 md:top-6 "
-        width={150}
-        height={150}
+        width={75}
+        height={75}
       />
       <form
         onSubmit={handleSubmit(onSubmit)}

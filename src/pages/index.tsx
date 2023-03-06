@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import Header from "@/components/Header";
 import Banner from "@/components/Banner";
 import requests from "utils/requests";
 import { Movie } from "typings";
 import Rows from "@/components/Rows";
+import useAuth from "hooks/useAuth";
+import { useRecoilValue } from "recoil";
+import Modal from "@/components/Modal";
+import { modalState } from "atoms/modalAtom";
 
 interface Props {
   netflixOriginals: Movie[];
@@ -28,6 +32,9 @@ export default function Index({
   trendingNow,
 }: Props) {
   // console.log(netflixOriginals);
+  const showModal = useRecoilValue(modalState);
+  const { loading } = useAuth();
+  if (loading) return null;
 
   return (
     <>
@@ -49,7 +56,7 @@ export default function Index({
             <Rows title="Documentaries" movies={documentaries} />
           </section>
         </main>
-        {/* modal */}
+        {showModal && <Modal />}
       </div>
     </>
   );
