@@ -68,17 +68,17 @@ const Modal = () => {
             playing
             muted={muted}
           />
-          <div className="absolute bottom-10 flex w-full items-center justify-between pr-4">
+          <div className="absolute bottom-4 flex w-full items-center justify-between pr-4">
             <div className="flex space-x-2">
               <button className="flex items-center gap-x-2 rounded bg-white px-8 text-xl font-bold text-black transition hover:bg-[#e6e6e6]">
-                <FaPlay className="h-7 w-7 text-[black]" />
+                <FaPlay className="h-6 w-6 text-black md:h-7 md:w-7" />
                 Play
               </button>
               <button className="flex h-11 w-11 transition hover:border-white border-2 hover:bg-white hover:text-black items-center justify-center rounded-full border-[gray] bg-[#2a2a2a]/60">
-                <PlusIcon className="h-7 w-7" />
+                <PlusIcon className="h-6 w-6 md:h-7 md:w-7" />
               </button>
               <button className="flex h-11 w-11 transition hover:border-white border-2 hover:bg-white hover:text-black items-center justify-center rounded-full border-[gray] bg-[#2a2a2a]/60">
-                <ThumbUpIcon className="h-7 w-7" />
+                <ThumbUpIcon className="h-6 w-6  md:h-7 md:w-7" />
               </button>
             </div>
             <button
@@ -86,9 +86,9 @@ const Modal = () => {
               onClick={() => setMuted(!muted)}
             >
               {muted ? (
-                <VolumeOffIcon className="h-6 w-6" />
+                <VolumeOffIcon className="h-6 w-6  md:h-7 md:w-7" />
               ) : (
-                <VolumeUpIcon className="h-6 w-6" />
+                <VolumeUpIcon className="h-6 w-6  md:h-7 md:w-7" />
               )}
             </button>
           </div>
